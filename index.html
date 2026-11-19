@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#2a0c05" />
+    <link rel="icon" href="data:," />
+    <title>Jingle the Bells</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- the webcam feeds pose tracking only; it's never shown (except in debug mode) -->
+    <video id="cam" playsinline muted></video>
+    <div id="game"></div>
+    <canvas id="debug" hidden></canvas>
+    <div id="intro">
+      <h1>Jingle the Bells</h1>
+      <p>Raise your hands like a Christmas star. Three ornaments are magic: they glow and sparkle. Push one into a wall to ring the bells and score a point. Bump a magic ornament into another and the magic jumps across.</p>
+      <button id="start">Light the candles</button>
+    </div>
+    <div id="status"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
