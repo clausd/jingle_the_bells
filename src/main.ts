@@ -8,6 +8,7 @@ import { Bells } from './audio'
 import { Songbook } from './songs'
 import { GameScene } from './game'
 import { PLAYER_COLORS } from './art'
+import { playIntro } from './intro'
 
 // URL options: ?demo  ?debug  ?mouse  ?mirror=0  ?camera=back  ?model=lite
 // and starting values for the tunable settings: ?reach=1.9  ?lift=0.7  ?drop=1.6  ?smooth=1.5
@@ -205,5 +206,6 @@ async function start() {
 }
 
 setDebug(debug)
+playIntro(document.querySelector<HTMLCanvasElement>('#howto')!, () => !intro.hidden)
 startButton.addEventListener('click', start)
 boot()

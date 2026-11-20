@@ -63,6 +63,13 @@ body.running.debug {
   text-shadow: 0 0 24px #ffb347aa;
 }
 
+#howto {
+  display: block;
+  width: min(360px, 100%);
+  aspect-ratio: 360 / 150;
+  margin: 0 auto 1em;
+}
+
 #intro p {
   margin: 0 auto 1.6em;
   max-width: 34em;
